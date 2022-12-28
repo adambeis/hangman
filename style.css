@@ -1,0 +1,204 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: #ccc;
+  font-family: "Courier New", Courier, monospace;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.ml-5 {
+  margin-left: 1.25rem; /* 20px */
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-dark-t7 {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.p-4 {
+  padding: 4px;
+}
+
+.p-8 {
+  padding: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+.rounded {
+  border-radius: 5px;
+}
+
+.border-green {
+  border: 2px solid;
+  border-color: green;
+}
+
+.border-red {
+  border: 2px solid;
+  border-color: red;
+}
+
+.modal {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal .content {
+  display: flex;
+  width: fit-content;
+  margin-top: 10rem;
+}
+
+.history-words {
+  padding: 5px 15px;
+  border-radius: 5px;
+  max-height: 20rem;
+  overflow: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  letter-spacing: 3px;
+  background: #fff;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+.guessWord {
+  border: 2px solid;
+  border-color: transparent;
+}
+
+.correct {
+  border: 2px solid;
+  border-color: green;
+}
+
+.wrong {
+  border: 2px solid;
+  border-color: red;
+}
+
+.row button {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.actions button:not(:first-child) {
+  margin-left: 8px;
+}
+
+.row button:not(:first-child) {
+  margin-left: 8px;
+}
+
+.actions {
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+}
+
+button {
+  color: #000;
+  background: #fff;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  border-color: #000;
+}
+
+button:disabled {
+  background: transparent;
+}
+
+button span {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.actions button {
+  height: 35px;
+  padding: 0 8px;
+}
+
+.actions button span {
+  margin-right: 1px;
+  font-size: 20px;
+}
+
+.history {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+}
+
+.group {
+  width: fit-content;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.keyboard div {
+  margin-bottom: 5px;
+}
+
+.row2 {
+  margin-left: 10px;
+}
+
+.row3 {
+  margin-left: 30px;
+}
+
+.center {
+  height: fit-content;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .row button {
+    width: 2.2rem;
+    height: 2.2rem;
+    padding: 0;
+  }
+
+  .actions button:not(:first-child) {
+    margin-left: 5px;
+  }
+
+  .row button:not(:first-child) {
+    margin-left: 5px;
+  }
+}

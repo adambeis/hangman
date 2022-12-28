@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>H_NGM_N</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="center">
+        <div id="modalHistory" class="modal hidden">
+          <div class="content m-auto">
+            <div class="words flex m-auto bg-dark-t7 p-8 rounded">
+              <div class="">
+                <h4 class="rounded p-8 bg-white">Wrong Words</h4>
+                <div
+                  name="wrongWords"
+                  id="wrongWords"
+                  class="history-words text-center bg-white border-red"
+                ></div>
+              </div>
+              <div class="ml-5">
+                <h4 class="rounded p-8 bg-white">Right Words</h4>
+                <div
+                  name="rightWords"
+                  id="rightWords"
+                  class="history-words text-center bg-white border-green"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="group">
+          <canvas id="canvas" width="140" height="140"></canvas>
+        </div>
+        <div class="group">
+          <h1 id="guessWord" class="guessWord"></h1>
+        </div>
+
+        <div class="group keyboard">
+          <div class="row row1">
+            <button id="q" value="q" onclick="keydown(this.value)">
+              <span>Q</span></button
+            ><button id="w" value="w" onclick="keydown(this.value)">
+              <span>W</span></button
+            ><button id="e" value="e" onclick="keydown(this.value)">
+              <span>E</span></button
+            ><button id="r" value="r" onclick="keydown(this.value)">
+              <span>R</span></button
+            ><button id="t" value="t" onclick="keydown(this.value)">
+              <span>T</span></button
+            ><button id="y" value="y" onclick="keydown(this.value)">
+              <span>Y</span></button
+            ><button id="u" value="u" onclick="keydown(this.value)">
+              <span>U</span></button
+            ><button id="i" value="i" onclick="keydown(this.value)">
+              <span>I</span></button
+            ><button id="o" value="o" onclick="keydown(this.value)">
+              <span>O</span></button
+            ><button id="p" value="p" onclick="keydown(this.value)">
+              <span>P</span>
+            </button>
+          </div>
+
+          <div class="row row2">
+            <button id="a" value="a" onclick="keydown(this.value)">
+              <span>A</span></button
+            ><button id="s" value="s" onclick="keydown(this.value)">
+              <span>S</span></button
+            ><button id="d" value="d" onclick="keydown(this.value)">
+              <span>D</span></button
+            ><button id="f" value="f" onclick="keydown(this.value)">
+              <span>F</span></button
+            ><button id="g" value="g" onclick="keydown(this.value)">
+              <span>G</span></button
+            ><button id="h" value="h" onclick="keydown(this.value)">
+              <span>H</span></button
+            ><button id="j" value="j" onclick="keydown(this.value)">
+              <span>J</span></button
+            ><button id="k" value="k" onclick="keydown(this.value)">
+              <span>K</span></button
+            ><button id="l" value="l" onclick="keydown(this.value)">
+              <span>L</span>
+            </button>
+            <!-- <button id="ñ" value="ñ" onclick="keydown(this.value)"><span>Ñ</span></button> (es)-->
+          </div>
+
+          <div class="row row3">
+            <button id="z" value="z" onclick="keydown(this.value)">
+              <span>Z</span></button
+            ><button id="x" value="x" onclick="keydown(this.value)">
+              <span>X</span></button
+            ><button id="c" value="c" onclick="keydown(this.value)">
+              <span>C</span></button
+            ><button id="v" value="v" onclick="keydown(this.value)">
+              <span>V</span></button
+            ><button id="b" value="b" onclick="keydown(this.value)">
+              <span>B</span></button
+            ><button id="n" value="n" onclick="keydown(this.value)">
+              <span>N</span></button
+            ><button id="m" value="m" onclick="keydown(this.value)">
+              <span>M</span>
+            </button>
+          </div>
+        </div>
+        <div class="actions">
+          <button title="Reveal Word" onclick="revealGuessWord()">
+            <span>R</span><span>E</span><span>V</span><span>E</span
+            ><span>A</span><span>L</span></button
+          ><button title="Next Word" onclick="setNewWord()">
+            <span>N</span><span>E</span><span>X</span><span>T</span>
+          </button>
+          <div class="history">
+            <button class="m-auto" title="See History" onclick="openHistory()">
+              <span>H</span><span>I</span><span>S</span><span>T</span
+              ><span>O</span><span>R</span><span>Y</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
